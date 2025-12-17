@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaCloudUploadAlt } from "react-icons/fa";
-import uploadImage from '../utils/UploadImage';
+import uploadImage from '../utils/uploadimage.js';
 import Loading from '../component/Loading';
 import ViewImage from "../component/ViewImage";
 import { MdDeleteOutline } from "react-icons/md";
