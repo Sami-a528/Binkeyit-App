@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IoIosCloseCircle } from "react-icons/io";
-import uploadImage from '../utils/UploadImage';
+import uploadImage from '../utils/uploadimage.js';
 import Axios from "../utils/Axios.js"
 import summaryApi from '../common/summaryApi.js';
 import toast from "react-hot-toast"

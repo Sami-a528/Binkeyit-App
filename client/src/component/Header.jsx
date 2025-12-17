@@ -22,8 +22,6 @@ const Header = () => {
   const user = useSelector((state) => state?.user);
   const [openUserMenu, setOpenUserMenu] = useState(false);
   const cartItem = useSelector(state => state.cartItem.cart);
-  // const [totalPrice, setTotalPrice] = useState(0)
-  // const [totalQty, setTotalQty] = useState(0)
   const { totalPrice, totalQty } = useGlobalContext()
   const [openCartSection, setOpenCartSection] = useState(false)
 
@@ -43,19 +41,6 @@ const Header = () => {
 
     navigate("/user");
   }
-
-  // // total items and total price
-  // useEffect(() => {
-  //   const qty = cartItem.reduce((preve, curr) => {
-  //     return preve + curr.quantity
-  //   }, 0)
-  //   setTotalQty(qty)
-    
-  //   const tPrice = cartItem.reduce((preve, curr) => {
-  //     return preve + (curr.productId.price * curr.quantity)
-  //   }, 0)
-  //   setTotalPrice(tPrice)
-  // }, [cartItem])
 
   return (
     <header className='h-24 lg:h-20 lg:shadow-md sticky top-0 z-40 flex flex-col justify-center gap-1 bg-white'>

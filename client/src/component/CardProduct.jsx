@@ -3,11 +3,6 @@ import { displayPriceinRupees } from '../utils/displayPriceinRupees'
 import { Link } from 'react-router-dom'
 import validURLConvert from '../utils/validURLConvert'
 import { pricewithDiscount } from '../utils/PriceWithDiscount'
-import Axios from "../utils/Axios.js"
-import summaryApi from '../common/summaryApi.js'
-import AxiosToastError from "../utils/AxiosToastError.js"
-import toast from 'react-hot-toast'
-import { useGlobalContext } from '../provider/GlobalProvider.jsx'
 import AddToCartButton from './AddToCartButton.jsx'
 
 const CardProduct = ({ data }) => {
